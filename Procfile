@@ -1,1 +1,1 @@
-web: python launcher.py --start
+walker: python launcher.py --start
