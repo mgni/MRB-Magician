@@ -1,1 +1,1 @@
-web: python red.py
+web: python launcher.py
