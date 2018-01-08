@@ -5,9 +5,11 @@ from .utils import checks
 from .utils.chat_formatting import pagify, box
 import os
 import re
-      class whois:
+      class coclink:
     """coc player info
     Display user village info"""
+        author = ctx.message.author
+        server = ctx.message.server
 
 @commands.command(pass_context=True, no_pm=True)
     async def testinfo(self, ctx, *, user: discord.Member=None):
@@ -83,4 +85,4 @@ joined_on = "{}\n({} days ago)".format(user_joined, since_joined)
 def setup(bot):
     check_folders()
     check_files()
-bot.add_cog(customcom(bot))
+bot.add_cog(coclink(bot))
