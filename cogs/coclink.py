@@ -83,4 +83,4 @@ joined_on = "{}\n({} days ago)".format(user_joined, since_joined)
 def setup(bot):
     check_folders()
     check_files()
-bot.add_cog(mytest(bot))
+bot.add_cog(customcom(bot))
