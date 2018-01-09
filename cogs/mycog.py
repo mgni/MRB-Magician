@@ -16,23 +16,15 @@ class Mycog:
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command()
+        
+    @commands.command(pass_context=True, no_pm=True)
     async def mycom(self, ctx, *, user: discord.Member=None):
-        """This does stuff!"""
-
-        #Your code will go here
-
-            async def userinfo(self, ctx, *, user: discord.Member=None):
-        """Shows users's informations"""
+        """Shows mycom informations"""
         author = ctx.message.author
         server = ctx.message.server
 
         if not user:
             user = author
-        
-        author = ctx.message.author
-        server = ctx.message.server
-        
         data = discord.Embed(description=game, colour=user.colour)
         data.add_field(name="This is name", value="This is value")
         data.add_field(name="This is name 2", value="This is value 2")
