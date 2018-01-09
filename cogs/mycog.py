@@ -1,14 +1,14 @@
 import discord
 from discord.ext import commands
-from .utils.chat_formatting import escape_mass_mentions, italics, pagify
-from random import randint
-from random import choice
-from enum import Enum
-from urllib.parse import quote_plus
-import datetime
-import time
-import aiohttp
-import asyncio
+#from .utils.chat_formatting import escape_mass_mentions, italics, pagify
+#from random import randint
+#from random import choice
+#from enum import Enum
+#from urllib.parse import quote_plus
+#import datetime
+#import time
+#import aiohttp
+#import asyncio
 
 class Mycog:
     """My custom cog that does stuff!"""
