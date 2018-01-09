@@ -5,9 +5,10 @@ from .utils import checks
 from .utils.chat_formatting import pagify, box
 import os
 import re
-      class coclink:
-    """coc player info
-    Display user village info"""
+
+class Coclink:
+    """coc player info"""
+
         def __init__(self, bot):
         self.bot = bot
 
@@ -33,14 +34,14 @@ import re
                                key=lambda m: m.joined_at).index(user) + 1
 
         created_on = "{}\n({} days ago)".format(user_created, since_created)
-joined_on = "{}\n({} days ago)".format(user_joined, since_joined)
+        joined_on = "{}\n({} days ago)".format(user_joined, since_joined)
 
-       data = discord.Embed(description=game, colour=user.colour)
+        data = discord.Embed(description=game, colour=user.colour)
         data.add_field(name="Joined Discord on", value=created_on)
         data.add_field(name="Joined this server on", value=joined_on)
         data.add_field(name="Roles", value=roles, inline=False)
-        data.set_footer(text="Member #{} | User ID:{}"
-"".format(member_number, user.id)) "
+#        data.set_footer(text="Member #{} | User ID:{}"
+#"".format(member_number, user.id)) "
         
        game = "Chilling in {} status".format(user.status)
 
