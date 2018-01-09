@@ -33,9 +33,11 @@ class Mycog:
 #"".format(member_number, user.id)) "
 
         name = str(user)
-        if user.avatar_url:
-            data.set_author(name=name, url=user.avatar_url)
-            data.set_thumbnail(url=user.avatar_url)
+        if user.avatar:
+            avatar = user.avatar_url
+            avatar = avatar.replace('webp','png')
+            data.set_author(name=name, url=avatar)
+            data.set_thumbnail(url=avatar)
         else:
             data.set_author(name=name)
 
