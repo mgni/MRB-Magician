@@ -28,7 +28,7 @@ class Mycog:
         data = discord.Embed(colour=user.colour)
         data.add_field(name="This is name", value="This is value")
         data.add_field(name="This is name 2", value="This is value 2")
-        data.add_field(name="sample", value="This is sample2 [Red, an open source Discord bot]("https://discord.gg/red")", inline=false)
+        data.add_field(name="sample", value="This is sample2 [Red, an open source Discord bot]("https://discord.gg/red")", inline=False)
 #       data.set_footer(text="Member #{} | User ID:{}"
 #"".format(member_number, user.id)) "
 
