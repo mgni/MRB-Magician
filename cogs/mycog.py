@@ -23,11 +23,17 @@ class Mycog:
         author = ctx.message.author
         server = ctx.message.server
 
+        server_url = "https://discord.gg/red"
+        
+        about =  (
+            "This is sample [Red, an open source Discord bot]({}) "
+             "".format(server_url))
         if not user:
             user = author
         data = discord.Embed(colour=user.colour)
         data.add_field(name="This is name", value="This is value")
         data.add_field(name="This is name 2", value="This is value 2")
+        data.add_field(name="sample", value=about, inline=False)
 #       data.set_footer(text="Member #{} | User ID:{}"
 #"".format(member_number, user.id)) "
 
