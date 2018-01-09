@@ -9,5 +9,6 @@
     "cogs.mod" : true,
     "cogs.streams" : true,
     "cogs.trivia" : true,
-    "cogs.coclink" : true
+    "cogs.coclink" : true,
+    "cogs.mycog" : true
 }
