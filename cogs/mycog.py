@@ -13,6 +13,10 @@ class Mycog:
 
         #Your code will go here
 
+        author = ctx.message.author
+        server = ctx.message.server
+        
+        data = discord.Embed(description=game, colour=user.colour)
         data.add_field(name="This is name", value="This is value")
         data.add_field(name="This is name 2", value="This is value 2")
 #       data.set_footer(text="Member #{} | User ID:{}"
@@ -31,7 +35,7 @@ class Mycog:
 "to send this")
             
             
-        await self.bot.say("I can do stuff!")
+ #       await self.bot.say("I can do stuff!")
 
 def setup(bot):
     bot.add_cog(Mycog(bot))
