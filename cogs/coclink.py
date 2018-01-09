@@ -40,7 +40,7 @@ joined_on = "{}\n({} days ago)".format(user_joined, since_joined)
         data.add_field(name="Joined this server on", value=joined_on)
         data.add_field(name="Roles", value=roles, inline=False)
         data.set_footer(text="Member #{} | User ID:{}"
-"".format(member_number, user.id))
+"".format(member_number, user.id)) "
         
        game = "Chilling in {} status".format(user.status)
 
@@ -62,8 +62,8 @@ joined_on = "{}\n({} days ago)".format(user_joined, since_joined)
         data.add_field(name="Joined Discord on", value=created_on)
         data.add_field(name="Joined this server on", value=joined_on)
         data.add_field(name="Roles", value=roles, inline=False)
-        data.set_footer(text="Member #{} | User ID:{}"
-                             "".format(member_number, user.id))
+        """data.set_footer(text="Member #{} | User ID:{}"
+                             "".format(member_number, user.id))"""
 
         name = str(user)
         name = " ~ ".join((name, user.nick)) if user.nick else name
