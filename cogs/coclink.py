@@ -84,6 +84,6 @@ class Coclink:
         print(author.name + " has been set as owner.")
 
 def setup(bot):
-    check_folders()
-    check_files()
+#    check_folders()
+#    check_files()
 bot.add_cog(coclink(bot))
