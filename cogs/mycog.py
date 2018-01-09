@@ -25,7 +25,7 @@ class Mycog:
 
         if not user:
             user = author
-        data = discord.Embed(description="description", colour=user.colour)
+        data = discord.Embed(colour=user.colour)
         data.add_field(name="This is name", value="This is value")
         data.add_field(name="This is name 2", value="This is value 2")
 #       data.set_footer(text="Member #{} | User ID:{}"
