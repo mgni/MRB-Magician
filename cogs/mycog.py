@@ -31,6 +31,7 @@ class Mycog:
 #       data.set_footer(text="Member #{} | User ID:{}"
 #"".format(member_number, user.id)) "
 
+        name = str(user)
         if user.avatar_url:
             data.set_author(name=name, url=user.avatar_url)
             data.set_thumbnail(url=user.avatar_url)
