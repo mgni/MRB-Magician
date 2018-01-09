@@ -23,7 +23,7 @@ class Mycog:
         author = ctx.message.author
         server = ctx.message.server
 
-        goblin = <:goblin:316393733493096448>
+        goblin = :goblin:316393733493096448
                 
         if not user:
             user = author
