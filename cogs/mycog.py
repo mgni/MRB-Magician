@@ -1,5 +1,14 @@
 import discord
 from discord.ext import commands
+from .utils.chat_formatting import escape_mass_mentions, italics, pagify
+from random import randint
+from random import choice
+from enum import Enum
+from urllib.parse import quote_plus
+import datetime
+import time
+import aiohttp
+import asyncio
 
 class Mycog:
     """My custom cog that does stuff!"""
@@ -8,11 +17,19 @@ class Mycog:
         self.bot = bot
 
     @commands.command()
-    async def mycom(self):
+    async def mycom(self, ctx, *, user: discord.Member=None):
         """This does stuff!"""
 
         #Your code will go here
 
+            async def userinfo(self, ctx, *, user: discord.Member=None):
+        """Shows users's informations"""
+        author = ctx.message.author
+        server = ctx.message.server
+
+        if not user:
+            user = author
+        
         author = ctx.message.author
         server = ctx.message.server
         
