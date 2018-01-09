@@ -8,8 +8,8 @@ import re
       class coclink:
     """coc player info
     Display user village info"""
-        author = ctx.message.author
-        server = ctx.message.server
+        def __init__(self, bot):
+        self.bot = bot
 
 @commands.command(pass_context=True, no_pm=True)
     async def testinfo(self, ctx, *, user: discord.Member=None):
