@@ -49,15 +49,11 @@ class Mybot:
             user = author
             
             mmrb_link = "https://link.clashofclans.com/?action=OpenClanProfile&tag=#82U2R290"
-            msgdata_mmrb=(
-                "Thi is MMRB Body Text.\n"
-            "TH9 : 15/15\n"
-            "TH0 : 35/35\n"
-            "TH1 : 40/40/20\n")
+            msgdata_mmrb=("Thi is MMRB Body Text.\nTH9 : 15/15\nTH0 : 35/35\nTH1 : 40/40/20\n")
             member_number=10
             msgdata_footer="Members 30/50 | Win/Loss/Ties: 160/72/0"
             
-        data = discord.Embed(colour=user.colour)
+        data = new discord.Embed(colour=user.colour)
         data.add_field(name="[MM Redy Blood](https://link.clashofclans.com/?action=OpenClanProfile&tag=#82U2R290)", value="", inline=False)
         data.add_field(name="[Goto Clan](https://link.clashofclans.com/?action=OpenClanProfile&tag=#82U2R290)", value=msgdata_mmrb, inline=False)
         data.add_field(name="<:bk2:400623664162406411>Leader:", value="LeaderName")
@@ -66,7 +62,7 @@ class Mybot:
                        "<:th10:400623664195829770> = <:bk:400623663809822730> <:aq:400623663952560128>\n"
                        "<:th11:400623664824844288> = <:bk:400623663809822730> <:aq:400623663952560128> <:gw:400623663998697493>")
         
-        data.set_footer(text=msgdata_footer)
+        data.set_footer(msgdata_footer)
 
         name = str(user)
         if user.avatar:
