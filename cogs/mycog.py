@@ -38,6 +38,7 @@ class Mybot:
             await self.bot.say("I need the `Embed links` permission "
 "to send this")
             
+    @commands.command(pass_context=True, no_pm=True)
     async def clanmsg(self, ctx, *, user: discord.Member=None):
         """Shows clan message for MM Redy Blood clan"""
         
