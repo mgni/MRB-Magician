@@ -6,7 +6,7 @@ class Mybot:
         self.bot = bot
 
     @commands.command(pass_context=True, no_pm=True)
-    async def whois(self, ctx, *, user: discord.Member=None):
+    async def test(self, ctx, *, user: discord.Member=None):
         """Shows mycom informations"""
         
         author = ctx.message.author
