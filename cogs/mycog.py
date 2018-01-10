@@ -49,10 +49,11 @@ class Mybot:
             user = author
             
             mmrb_link = "https://link.clashofclans.com/?action=OpenClanProfile&tag=#82U2R290"
-            msgdata_mmrb="Thi is MMRB Body Text.\n"
-            msgdata_mmrb="TH9 : 15/15\n"
-            msgdata_mmrb="TH0 : 35/35\n"
-            msgdata_mmrb="TH1 : 40/40/20\n"
+            msgdata_mmrb=(
+                "Thi is MMRB Body Text.\n"
+            "TH9 : 15/15\n"
+            "TH0 : 35/35\n"
+            "TH1 : 40/40/20\n")
             member_number=10
             msgdata_footer="Members 30/50 | Win/Loss/Ties: 160/72/0"
             
