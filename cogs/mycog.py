@@ -47,7 +47,7 @@ class Mybot:
         if not user:
             user = author
      
-        data = new discord.Embed(colour=user.colour)
+        data = discord.Embed(colour=user.colour)
         data.add_field(name="MM Redy Blood", value="")
         data.add_field(name="[Goto Clan](https://link.clashofclans.com/?action=OpenClanProfile&tag=#82U2R290)", value="", inline=False)
         data.add_field(name="", value="Body Text Here", inline=False)
