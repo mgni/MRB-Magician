@@ -18,7 +18,7 @@ class Mybot:
         data.add_field(name="Name", value="This is value")
         data.add_field(name="Name 2", value="This is value 2")
         data.add_field(name="Sample link", value="This is sample link [Red, an open source Discord bot](https://discord.gg/red)", inline=False)
-        data.add_field(name="Emoji", value="This is sample emoji <:barbarian:316393732671012864>")
+        data.add_field(name="Emoji", value="This is sample emoji <:barbarian:316393732671012864>" + user.name)
         
 #       data.set_footer(text="Member #{} | User ID:{}"
 #"".format(member_number, user.id)) "
