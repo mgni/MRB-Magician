@@ -28,7 +28,7 @@ class Mybot:
         data.add_field(name="This is name", value="This is value")
         data.add_field(name="This is name 2", value="This is value 2")
         data.add_field(name="sample", value="This is sample2, [Red, an open source Discord bot](https://discord.gg/red)", inline=False)
-        data.add_field(name="Trophies", value="This is Trophy Value <:barbarian:316393732671012864>", inline=False)
+        #data.add_field(name="Trophies", value="This is Trophy Value <:barbarian:316393732671012864>", inline=False)
 
         name = str(user)
         if user.avatar:
