@@ -46,9 +46,7 @@ class Mybot:
   
         if not user:
             user = author
-            
-           msgdata_footer="Members 30/50 | Win/Loss/Ties: 160/72/0"
-            
+     
         data = new discord.Embed(colour=user.colour)
         data.add_field(name="MM Redy Blood", value="")
         data.add_field(name="[Goto Clan](https://link.clashofclans.com/?action=OpenClanProfile&tag=#82U2R290)", value="", inline=False)
