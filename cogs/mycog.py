@@ -50,13 +50,13 @@ class Mybot:
      
         data = discord.Embed(colour=user.colour)
         data.add_field(name="MM Redy Blood", value="")
-        data.add_field(name="[Goto Clan](https://link.clashofclans.com/?action=OpenClanProfile&tag=#82U2R290)", value="", inline=False)
-        data.add_field(name="", value="Body Text Here", inline=False)
-        data.add_field(name="<:bk2:400623664162406411>Leader:", value="LeaderName")
-        data.add_field(name="TH levels accepted:", value="<:th9:400623665005330442> <:th10:400623664195829770> <:th11:400623664824844288>")
-        data.add_field(name="Allowed in war:", value="<:th9:400623665005330442> = <:bk:400623663809822730> <:aq:400623663952560128>\n"
-                       "<:th10:400623664195829770> = <:bk:400623663809822730> <:aq:400623663952560128>\n"
-                       "<:th11:400623664824844288> = <:bk:400623663809822730> <:aq:400623663952560128> <:gw:400623663998697493>")
+   #     data.add_field(name="[Goto Clan](https://link.clashofclans.com/?action=OpenClanProfile&tag=#82U2R290)", value="", inline=False)
+   #     data.add_field(name="", value="Body Text Here", inline=False)
+   #     data.add_field(name="<:bk2:400623664162406411>Leader:", value="LeaderName")
+   #     data.add_field(name="TH levels accepted:", value="<:th9:400623665005330442> <:th10:400623664195829770> <:th11:400623664824844288>")
+   #     data.add_field(name="Allowed in war:", value="<:th9:400623665005330442> = <:bk:400623663809822730> <:aq:400623663952560128>\n"
+   #                    "<:th10:400623664195829770> = <:bk:400623663809822730> <:aq:400623663952560128>\n"
+    #                   "<:th11:400623664824844288> = <:bk:400623663809822730> <:aq:400623663952560128> <:gw:400623663998697493>")
 
         name = str(user)
         if user.avatar:
