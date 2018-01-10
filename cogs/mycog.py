@@ -47,7 +47,6 @@ class Mybot:
         if not user:
             user = author
             
-           member_number=10
            msgdata_footer="Members 30/50 | Win/Loss/Ties: 160/72/0"
             
         data = new discord.Embed(colour=user.colour)
@@ -60,7 +59,7 @@ class Mybot:
                        "<:th10:400623664195829770> = <:bk:400623663809822730> <:aq:400623663952560128>\n"
                        "<:th11:400623664824844288> = <:bk:400623663809822730> <:aq:400623663952560128> <:gw:400623663998697493>")
         
-        data.set_footer(msgdata_footer)
+        data.set_footer("this is footer)
 
         name = str(user)
         if user.avatar:
